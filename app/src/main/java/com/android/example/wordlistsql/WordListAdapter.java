@@ -16,8 +16,11 @@
 
 package com.android.example.wordlistsql;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +53,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
 
     public static final String EXTRA_ID = "ID";
     public static final String EXTRA_WORD = "WORD";
+    public static final String EXTRA_POSITION = "POSITION";
 
     private final LayoutInflater mInflater;
     Context mContext;
@@ -72,12 +76,46 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         holder.wordItemView.setText("placeholder");
         WordItem current = mDB.query(position);
         holder.wordItemView.setText(current.getmWord());
+
+        final WordViewHolder h = holder; // needs to be final for use in callback
+        // Attach a click listener to the DELETE button.
+        holder.delete_button.setOnClickListener(new MyButtonOnClickListener(
+                current.getmId(), null)  {
+
+
+            @Override
+            public void onClick(View v ) {
+                // You have to get the position like this, you can't hold a reference
+                Log.d (TAG + "onClick", "VHPos " + h.getAdapterPosition() + " ID " + id);
+                int deleted = mDB.delete(id);
+                if (deleted >= 0)
+                    notifyItemRemoved(h.getAdapterPosition());
+            }
+        });
+
+        // Attach a click listener to the EDIT button.
+        holder.edit_button.setOnClickListener(new MyButtonOnClickListener(
+                current.getmId(), current.getmWord()) {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, EditWordActivity.class);
+
+                intent.putExtra(EXTRA_ID, id);
+                intent.putExtra(EXTRA_POSITION, h.getAdapterPosition());
+                intent.putExtra(EXTRA_WORD, word);
+
+                // Start an empty edit activity.
+                ((Activity) mContext).startActivityForResult(
+                        intent, MainActivity.WORD_EDIT);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         // Placeholder so we can see some mock data.
-        return 10;
+        return (int) mDB.count();
     }
 }
 

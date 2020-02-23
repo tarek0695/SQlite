@@ -1,11 +1,23 @@
 [
     {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
@@ -16,6 +28,10 @@
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
@@ -24,12 +40,32 @@
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_default.xml"
     },
     {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",

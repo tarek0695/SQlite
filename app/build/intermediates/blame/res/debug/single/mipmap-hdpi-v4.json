@@ -2,5 +2,9 @@
     {
         "merged": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "D:\\Android-Tarek\\android-fundamentals-starter-apps-master\\WordListSql-Starter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android Project\\SQlite\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\Android Project\\SQlite\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

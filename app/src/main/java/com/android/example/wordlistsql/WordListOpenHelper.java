@@ -3,6 +3,7 @@ package com.android.example.wordlistsql;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -110,6 +111,45 @@ public class WordListOpenHelper extends SQLiteOpenHelper {
             Log.d(TAG, "INSERT EXCEPTION! " + e.getMessage());
         }
         return newId;
+    }
+
+    public long count(){
+        if (mReadableDB == null) {
+            mReadableDB = getReadableDatabase();
+        }
+        return DatabaseUtils.queryNumEntries(mReadableDB, WORD_LIST_TABLE);
+    }
+
+    public int delete(int id) {
+        int deleted = 0;
+        try {
+            if (mWritableDB == null) {
+                mWritableDB = getWritableDatabase();
+            }
+            deleted = mWritableDB.delete(WORD_LIST_TABLE, //table name
+                    KEY_ID + " =? ", new String[]{String.valueOf(id)});
+        } catch (Exception e) {
+            Log.d (TAG, "DELETE EXCEPTION! " + e.getMessage());
+        }
+        return deleted;
+    }
+
+    public int update(int id, String word) {
+        int mNumberOfRowsUpdated = -1;
+        try {
+            if (mWritableDB == null) {
+                mWritableDB = getWritableDatabase();
+            }
+            ContentValues values = new ContentValues();
+            values.put(KEY_WORD, word);
+            mNumberOfRowsUpdated = mWritableDB.update(WORD_LIST_TABLE,
+                    values,
+                    KEY_ID + " = ?",
+                    new String[]{String.valueOf(id)});
+        } catch (Exception e) {
+            Log.d (TAG, "UPDATE EXCEPTION! " + e.getMessage());
+        }
+        return mNumberOfRowsUpdated;
     }
 
 }
