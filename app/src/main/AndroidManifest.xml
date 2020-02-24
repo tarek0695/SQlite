@@ -32,6 +32,9 @@ limitations under the License. -->
 
         </activity>
         <activity android:name=".EditWordActivity"></activity>
+        <activity
+            android:name="com.android.example.wordlistsql.SearchActivity">
+        </activity>
 
     </application>
 
